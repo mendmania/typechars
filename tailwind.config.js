@@ -9,7 +9,11 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      }
+    },
   },
   plugins: [],
 }

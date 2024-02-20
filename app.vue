@@ -70,8 +70,8 @@ useHead({
 <template>
   <div class="h-full flex flex-col">
     <TheHeader />
-    <!-- <NuxtPage /> -->
-
+    <NuxtPage />
+    <div class="flex-grow" />
     <TheFooter />
   </div>
 </template>

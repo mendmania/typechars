@@ -9,11 +9,12 @@ body,
 }
 
 body {
+    font-family: 'Roboto Mono', monospace;
     background: #212534;
 }
 
-*{
+
+* {
     outline: none;
     box-shadow: none;
-    user-select: none;
 }

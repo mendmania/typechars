@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <div>Type Chars</div>
+  <div>
+    <TypeInput />
+  </div>
 </template>
 
 <style>
