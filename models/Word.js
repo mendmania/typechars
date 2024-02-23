@@ -18,7 +18,6 @@ class Word {
 
     setValue(data) {
         this.value = data
-        console.log(data)
         this.remainingWord = this.removeSubstringIfAtStart(this.original, data)
     }
 
@@ -27,17 +26,21 @@ class Word {
 
         } else {
             this.isCorrect = false
-
         }
+
         this.isActive = false
+    }
+
+    checkWordCorrectnes() {
+        if (!this.value) return true
+        
+        return this.original.startsWith(this.value);
     }
 
     removeSubstringIfAtStart(originalString, substringToRemove) {
         if (originalString.startsWith(substringToRemove)) {
-            // Remove the substring from the start
             return originalString.slice(substringToRemove.length);
         }
-        // Return the original string if it doesn't start with the substring
         return originalString;
     }
 

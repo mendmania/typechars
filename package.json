@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "type-chars",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "autoprefixer": "^10.4.16",
-    "nuxt": "^3.8.2",
+    "nuxt": "3.10.3",
     "postcss": "^8.4.32",
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.6",

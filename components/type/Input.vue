@@ -2,6 +2,9 @@
 import { ref } from "vue";
 import { TYPE_CHAR_WORDS } from "~/constants/TYPE_CHAR_WORDS";
 import Word from '~/models/Word'
+import { useModalStore } from '../../stores/modal'
+
+const modalStore = useModalStore()
 
 const typeInput = ref(null);
 const contentEditableValue = ref("");
@@ -11,7 +14,8 @@ const pastWords = ref([]);
 const nextWords = ref([]);
 const keyPressed = ref(false)
 const inputValue = ref(null)
-const letterWidth = ref(0)
+const isActiveWordCorrect = ref(true)
+const isGameActive = ref(false)
 
 const handleKeyDown = event => {
   if (event.key === "Backspace") {
@@ -60,23 +64,15 @@ const addFocusToInput = () => {
   typeInput.value.focus();
 };
 
-const getLetterWidth = (letter = 'i', font = "16px monospace") => {
-  const span = document.createElement("span");
-  span.classList.add("measure");
-  span.textContent = letter; // Set the letter as the text content
-  document.body.appendChild(span);
-  const width = span.getBoundingClientRect().width;
-  document.body.removeChild(span);
-
-  return width;
-}
-
 onMounted(() => {
-  letterWidth.value = getLetterWidth()
+  addFocusToInput()
 })
 
 const checkInput = () => {
-  console.log('----', inputValue.value)
+  if (!isGameActive.value) {
+    isGameActive.value = true
+  }
+
   inputValue.value = inputValue.value.trimStart()
   const [activeWord] = nextWords.value
 
@@ -87,13 +83,19 @@ const checkInput = () => {
 
   activeWord.setValue(inputValue.value)
 
+  console.log(activeWord.checkWordCorrectnes())
+  isActiveWordCorrect.value = activeWord.checkWordCorrectnes()
+
   if (inputValue.value.includes(' ')) {
     activeWord.checkAndFinish()
+
+
     inputValue.value = null
 
     pastWords.value.push(activeWord)
     nextWords.value.shift()
     fillNextWords(1);
+
   } else {
     // activeWord.resetActiveWord()
   }
@@ -101,13 +103,9 @@ const checkInput = () => {
 }
 
 const calculateAccuracy = words => {
-  // Calculate the number of correct words
   const correctWordsCount = words.filter(word => word.isCorrect).length;
-
-  // Calculate the accuracy percentage
   const accuracy = (correctWordsCount / words.length) * 100;
 
-  // Return the results
   return {
     correctWordsCount: correctWordsCount,
     accuracy: accuracy
@@ -116,21 +114,34 @@ const calculateAccuracy = words => {
 
 const result = computed(() => {
   const correctWordsCount = pastWords.value.filter(word => word.isCorrect).length;
-
   const accuracy = (correctWordsCount / pastWords.value.length) * 100 || 0;
-
   return {
     correctCount: correctWordsCount,
-    accuracy: Math.round(accuracy)
+    accuracy: Math.round(accuracy),
+    count: pastWords.value.length,
   };
 })
+
+const timerFinished = () => {
+  isGameActive.value = false
+
+  modalStore.showModal()
+  modalStore.setModalData(result.value)
+
+  inputValue.value = null
+  pastWords.value = []
+}
 
 </script>
 
 <template>
   <div class="type-input flex flex-col justify-center items-center max-w-screen-lg mx-auto">
-    <InfoResults :correctCount="result.correctCount" :accuracy="result.accuracy" />
-    <div class="flex justify-start items-center bg-white w-10/12 rounded-lg text-4xl overflow-hidden relative py-4"
+    <div class="flex items-center justify-evenly w-full">
+      <InfoTimer v-if="isGameActive" :timerFinishedCallback="timerFinished" :timer="60" />
+      <InfoTimerSceleton v-else :timerFinishedCallback="timerFinished" :timer="60" />
+      <InfoResults :correctCount="result.correctCount" :accuracy="result.accuracy" />
+    </div>
+    <div class="flex justify-start items-center bg-white w-full rounded-lg text-4xl overflow-hidden relative py-4"
       @click="addFocusToInput">
 
       <div class="text-red-400 w-1/2 flex overflow-hidden justify-end">
@@ -139,7 +150,8 @@ const result = computed(() => {
           class="text-gray-400 mr-2.5 flex items-center whitespace-nowrap" :class="word.isCorrect ? '' : 'line-through'">
           {{ word.value }}
         </span>
-        <span class="text-gray-400 flex items-center">
+
+        <span class="text-gray-400 flex items-center" :class="isActiveWordCorrect ? 'text-green-700' : 'text-red-700'">
           {{ inputValue }}
         </span>
       </div>

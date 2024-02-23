@@ -1,4 +1,11 @@
 <script setup>
+import { useModalStore } from './stores/modal'
+import { storeToRefs } from 'pinia';
+
+const modalStore = useModalStore()
+
+const { data, showModal, active } = storeToRefs(modalStore)
+
 useHead({
   title: "Type Chars",
   htmlAttrs: { lang: "en" },
@@ -69,9 +76,12 @@ useHead({
 
 <template>
   <div class="h-full flex flex-col">
-    <TheHeader />
-    <NuxtPage />
-    <div class="flex-grow" />
-    <TheFooter />
+    <div class="h-full flex flex-col" :class="active ? 'blur-lg' : null">
+      <TheHeader />
+      <NuxtPage />
+      <div class="flex-grow" />
+      <TheFooter />
+    </div>
+    <InfoResultModal v-if="active" />
   </div>
 </template>
