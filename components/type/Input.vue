@@ -19,7 +19,6 @@ const isGameActive = ref(false)
 
 const handleKeyDown = event => {
   if (event.key === "Backspace") {
-    console.log("Key pressed");
     keyPressed.value = true;
   } else if (event.key === "Enter") {
     if (inputValue.value) {
@@ -83,7 +82,6 @@ const checkInput = () => {
 
   activeWord.setValue(inputValue.value)
 
-  console.log(activeWord.checkWordCorrectnes())
   isActiveWordCorrect.value = activeWord.checkWordCorrectnes()
 
   if (inputValue.value.includes(' ')) {
@@ -135,8 +133,8 @@ const timerFinished = () => {
 </script>
 
 <template>
-  <div class="type-input flex flex-col justify-center items-center max-w-screen-lg mx-auto">
-    <div class="flex items-center justify-evenly w-full">
+  <div class="type-input flex flex-col justify-center items-center max-w-screen-lg mx-auto mb-32">
+    <div class="flex flex-col sm:flex-row items-center justify-evenly w-full">
       <InfoTimer v-if="isGameActive" :timerFinishedCallback="timerFinished" :timer="60" />
       <InfoTimerSceleton v-else :timerFinishedCallback="timerFinished" :timer="60" />
       <InfoResults :correctCount="result.correctCount" :accuracy="result.accuracy" />
