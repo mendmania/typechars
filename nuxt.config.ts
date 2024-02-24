@@ -22,7 +22,11 @@ export default defineNuxtConfig({
   },
   modules: [
     '@pinia/nuxt',
+    'nuxt-gtag',
   ],
+  gtag: {
+    id: 'G-BB0GGDN3K7'
+  },
   runtimeConfig: {
     public: {
       apiKey: process.env.NUXT_API_KEY,

@@ -23,6 +23,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "highcharts-vue": "^1.4.3",
+    "nuxt-gtag": "^1.2.1",
     "pinia": "^2.1.7"
   }
 }
