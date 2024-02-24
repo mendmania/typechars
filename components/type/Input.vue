@@ -149,7 +149,7 @@ const timerFinished = () => {
           {{ word.value }}
         </span>
 
-        <span class="text-gray-400 flex items-center" :class="isActiveWordCorrect ? 'text-green-700' : 'text-red-700'">
+        <span class="text-gray-400 flex items-center" :class="isActiveWordCorrect ? 'text-[#c1ff72]' : 'text-red-700'">
           {{ inputValue }}
         </span>
       </div>

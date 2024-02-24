@@ -86,7 +86,7 @@ const props = defineProps({
         height: 100%;
         border-radius: 50%;
         position: absolute;
-        border: 9px solid #2FC08B;
+        border: 9px solid #c1ff72;
         z-index: 100;
     }
 
@@ -97,7 +97,7 @@ const props = defineProps({
         z-index: 100;
         animation: opa $duration steps(1, end) infinite reverse;
         border-left: none;
-        border-color: #2FC08B;
+        border-color: #c1ff72;
     }
 
     #{$item} .mask {
@@ -108,7 +108,7 @@ const props = defineProps({
         background: transparent;
         z-index: 500;
         animation: opa2 $duration steps(1) infinite reverse;
-        border: 9px solid #2FC08B;
+        border: 9px solid #c1ff72;
         border-radius: 100% 0 0 100% / 50% 0 0 50%;
         border-right: none;
     }
@@ -147,5 +147,5 @@ const props = defineProps({
 
 }
 
-@include timer('.spinner-wrapper', v-bind(timerValue), 150px, transparent, '9px solid #2FC08B');
+@include timer('.spinner-wrapper', v-bind(timerValue), 150px, transparent, '9px solid #c1ff72');
 </style>

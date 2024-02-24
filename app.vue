@@ -7,20 +7,20 @@ const modalStore = useModalStore()
 const { data, showModal, active } = storeToRefs(modalStore)
 
 useHead({
-  title: "Type Chars",
+  title: "Type Chars - Master Typing Speed",
   htmlAttrs: { lang: "en" },
   meta: [
     {
       hid: "description",
       name: "description",
       content:
-        "Draw is a thrilling board game of deception. Discover who the spy is before it’s too late! Learn the rules, strategies, and enjoy hours of espionage fun.",
+        "Type Chars is your ultimate platform to practice and enhance your typing speed and accuracy. Perfect for learners at all levels to become typing masters.",
     },
     {
       hid: "keywords",
       name: "keywords",
       content:
-        "Draw, board game, deception, spy, party game, social deduction, strategy game",
+        "typing, improve typing speed, typing practice, keyboard skills, typing master, touch typing, speed typing",
     },
     {
       hid: "og:type",
@@ -30,44 +30,44 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: "Draw Board Game - Uncover the Deception",
+      content: "Type Chars - Elevate Your Typing Skills",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Draw is a thrilling board game of deception. Discover who the spy is before it’s too late! Learn the rules, strategies, and enjoy hours of espionage fun.",
+        "Master your typing skills with Type Chars. Engage in various typing challenges to improve speed and accuracy. Start your journey to becoming a typing master today!",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://https://Draw.virtualboardzone.com/DrawBanner.jpg",
+      content: "https://typechars.com/Banner.webp",
     },
     {
       hid: "og:url",
       property: "og:url",
-      content: "https://Draw.virtualboardzone.com",
+      content: "https://typechars.com",
     },
     {
       hid: "twitter:card",
       name: "twitter:card",
-      content: "https://https://Draw.virtualboardzone.com/DrawBanner.jpg",
+      content: "https://typechars.com/Banner.webp",
     },
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: "Draw Board Game - Uncover the Deception",
+      content: "Type Chars - Elevate Your Typing Skills",
     },
     {
       hid: "twitter:description",
       name: "twitter:description",
       content:
-        "Draw is a thrilling board game of deception. Discover who the spy is before it’s too late! Learn the rules, strategies, and enjoy hours of espionage fun.",
+        "Improve your typing speed and accuracy with Type Chars. Explore various exercises and games designed for all levels. Become a typing master with us!",
     },
     {
       hid: "twitter:image",
       name: "twitter:image",
-      content: "https://https://Draw.virtualboardzone.com/DrawBanner.jpg",
+      content: "https://typechars.com/Banner.webp",
     },
   ],
 });

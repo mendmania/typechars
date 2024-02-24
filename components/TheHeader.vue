@@ -7,19 +7,15 @@ import { ref } from "vue";
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-6">
       <div class="sm:flex sm:items-center sm:justify-between">
         <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <!-- <img
-            :src="'/DrawIcon.png'"
-            class="h-[64px] w-[64px]"
-            alt="Type Chars Logo"
-          /> -->
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Type Chars</span>
+          <img :src="'/Icon.png'" class="h-[64px]" alt="Type Chars Logo" />
+          <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Type Chars</span> -->
         </NuxtLink>
         <ul class="flex flex-wrap items-center my-3 text-sm font-medium text-gray-500 dark:text-gray-400">
-          <li>
+          <!-- <li>
             <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-          </li>
+          </li> -->
           <li>
-            <a href="#" class="hover:underline">Contact</a>
+            <NuxtLink to="/" class="hover:underline">Home</NuxtLink>
           </li>
         </ul>
       </div>

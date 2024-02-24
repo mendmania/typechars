@@ -114,7 +114,7 @@ startTimer()
         z-index: 100;
         animation: opa $duration steps(1, end) infinite reverse;
         border-left: none;
-        border-color: #2FC08B;
+        border-color: #c1ff72;
     }
 
     #{$item} .mask {
@@ -164,5 +164,5 @@ startTimer()
 
 }
 
-@include timer('.spinner-wrapper', v-bind(timerValue), 150px, transparent, '9px solid #2FC08B');
+@include timer('.spinner-wrapper', v-bind(timerValue), 150px, transparent, '9px solid #c1ff72');
 </style>
