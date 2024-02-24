@@ -22,9 +22,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
-    "d3": "^7.8.5",
     "highcharts-vue": "^1.4.3",
-    "pinia": "^2.1.7",
-    "recharts": "^2.12.1"
+    "pinia": "^2.1.7"
   }
 }
