@@ -11,7 +11,11 @@ const props = defineProps({
     timerFinishedCallback: {
         type: Function,
         required: true
-    }
+    },
+    analyticsCallback: {
+        type: Function,
+        required: true
+    },
 })
 
 const inputSeconds = ref(props.timer);
@@ -26,6 +30,7 @@ function startTimer() {
             clearInterval(intervalId);
             props.timerFinishedCallback()
         }
+        props.analyticsCallback()
     }, 1000);
 }
 

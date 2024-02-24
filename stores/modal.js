@@ -4,7 +4,8 @@ export const useModalStore = defineStore('useModalStore', {
   state: () => ({
     showModal: true,
     active: false,
-    data: 'meni'
+    data: 'meni',
+    analytics: {}
   }),
   actions: {
     showModal() {
@@ -15,6 +16,12 @@ export const useModalStore = defineStore('useModalStore', {
     },
     setModalData(data) {
       this.data = data
+    },
+    setAnalytics(data) {
+      this.analytics = data
+    },
+    resetAnalytics() {
+      this.analytics = {}
     }
   },
 });

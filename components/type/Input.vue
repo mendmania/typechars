@@ -8,9 +8,14 @@ const modalStore = useModalStore()
 
 const typeInput = ref(null);
 const contentEditableValue = ref("");
+const analytics = ref({
+  correctCharsPerSec: [],
+  wrongCharsPerSec: [],
+})
 // const currentNextWordValue = ref(null);
 
 const pastWords = ref([]);
+const tempPastWords = ref([]);
 const nextWords = ref([]);
 const keyPressed = ref(false)
 const inputValue = ref(null)
@@ -86,11 +91,10 @@ const checkInput = () => {
 
   if (inputValue.value.includes(' ')) {
     activeWord.checkAndFinish()
-
-
     inputValue.value = null
 
     pastWords.value.push(activeWord)
+    tempPastWords.value.push(activeWord)
     nextWords.value.shift()
     fillNextWords(1);
 
@@ -121,6 +125,13 @@ const result = computed(() => {
 })
 
 const timerFinished = () => {
+
+  modalStore.setAnalytics(analytics.value)
+  analytics.value = {
+    correctCharsPerSec: [],
+    wrongCharsPerSec: [],
+  }
+  
   isGameActive.value = false
 
   modalStore.showModal()
@@ -130,12 +141,30 @@ const timerFinished = () => {
   pastWords.value = []
 }
 
+const analyticsFn = () => {
+
+  const lengthsCorrect = tempPastWords.value
+    .filter(item => item.isCorrect === true)
+    .reduce((acc, item) => acc + item.value.length, 0);
+
+  // Array with lengths of incorrect value strings
+  const lengthsIncorrect = tempPastWords.value
+    .filter(item => item.isCorrect === false)
+    .reduce((acc, item) => acc + item.value.length, 0);
+
+  analytics.value.correctCharsPerSec.push(lengthsCorrect)
+  analytics.value.wrongCharsPerSec.push(lengthsIncorrect)
+
+  tempPastWords.value = []
+}
+
 </script>
 
 <template>
   <div class="type-input flex flex-col justify-center items-center max-w-screen-lg mx-auto mb-32">
     <div class="flex flex-col sm:flex-row items-center justify-evenly w-full">
-      <InfoTimer v-if="isGameActive" :timerFinishedCallback="timerFinished" :timer="60" />
+      <InfoTimer v-if="isGameActive" :timerFinishedCallback="timerFinished" :analyticsCallback="analyticsFn"
+        :timer="60" />
       <InfoTimerSceleton v-else :timerFinishedCallback="timerFinished" :timer="60" />
       <InfoResults :correctCount="result.correctCount" :accuracy="result.accuracy" />
     </div>
@@ -148,6 +177,7 @@ const timerFinished = () => {
           class="text-gray-400 mr-2.5 flex items-center whitespace-nowrap" :class="word.isCorrect ? '' : 'line-through'">
           {{ word.value }}
         </span>
+
 
         <span class="text-gray-400 flex items-center" :class="isActiveWordCorrect ? 'text-[#c1ff72]' : 'text-red-700'">
           {{ inputValue }}

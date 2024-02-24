@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="max-w-xl w-full  rounded-lg  p-4 md:p-6 mb-6">
+    <div class="max-w-xl w-full  rounded-lg  p-4 md:p-6">
         <div class="flex justify-between mb-3">
             <div class="flex items-center">
                 <div class="flex justify-center items-center">
