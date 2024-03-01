@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     'nuxt-gtag',
+    '@nuxtjs/sitemap',
   ],
   gtag: {
     id: 'G-BB0GGDN3K7'
