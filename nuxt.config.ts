@@ -2,8 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  plugins: [
-  ],
   app: {
     head: {
       charset: 'utf-8',
@@ -20,6 +18,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  plugins: [
+    '~/plugins/facebook-sdk.js',
+  ],
   modules: [
     '@pinia/nuxt',
     'nuxt-gtag',
