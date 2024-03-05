@@ -120,7 +120,7 @@ const result = computed(() => {
   return {
     correctCount: correctWordsCount,
     accuracy: Math.round(accuracy),
-    count: pastWords.value.length,
+    count: pastWords.value.join(',').length,
   };
 })
 
