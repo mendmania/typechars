@@ -21,6 +21,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxt/image": "^1.4.0",
     "@nuxtjs/sitemap": "^5.1.0",
     "@pinia/nuxt": "^0.5.1",
     "highcharts-vue": "^1.4.3",

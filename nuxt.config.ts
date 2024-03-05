@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2' },
         { hid: 'fb:app_id', property: 'fb:app_id', content: '319182567374988' },
       ],
       link: [
@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'nuxt-gtag',
     '@nuxtjs/sitemap',
+    '@nuxt/image',
   ],
   gtag: {
     id: 'G-BB0GGDN3K7'

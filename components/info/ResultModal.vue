@@ -38,7 +38,6 @@ const shareOnFacebook = () => {
         class="overflow-y-auto overflow-x-hidden fixed flex top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="w-full h-full absolute"></div>
         <div class="relative p-4 w-full max-w-4xl max-h-full">
-{{ data }}
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 <button @click="onModalClose" type="button"
@@ -65,7 +64,7 @@ const shareOnFacebook = () => {
                         <div class="bg-orange-500 h-2.5 rounded-full" :style="{ width: `${data.accuracy}%` }"></div>
                     </div>
 
-                    <InfoResults :correctCount="data.correctCount" :accuracy="data.accuracy" />
+                    <InfoResults :correctCount="data.correctCount" :accuracy="data.accuracy" :count="data.count" />
                     <InfoChart :wrongCharsPerSec="analytics.wrongCharsPerSec"
                         :correctCharsPerSec="analytics.correctCharsPerSec" />
 
