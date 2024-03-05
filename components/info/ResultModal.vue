@@ -53,8 +53,7 @@ const shareOnFacebook = () => {
                 <div class="p-4 md:p-5 flex  flex-col items-center">
 
                     <h3 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">Type Chars Results.</h3>
-                    <p class="text-gray-500 dark:text-gray-400 mb-6">Choosing the right server storage solution is essential
-                        for maintaining data integrity.</p>
+
                     <div class="flex justify-between w-full mb-1 text-gray-500 dark:text-gray-400">
                         <span class="text-base font-normal">Progress</span>
                         <span class="text-sm font-semibold text-gray-900 dark:text-white">{{ data.correctCount }} correct of
