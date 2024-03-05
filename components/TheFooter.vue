@@ -24,7 +24,10 @@
             <NuxtLink to="/" class="hover:underline me-4 md:me-6">Licensing</NuxtLink>
           </li> -->
           <li>
-            <NuxtLink to="/" class="hover:underline">Contact</NuxtLink>
+            <NuxtLink to="/" class="hover:underline me-4 md:me-6">Contact</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/articles" class="hover:underline me-4 md:me-6">Articles</NuxtLink>
           </li>
         </ul>
       </div>

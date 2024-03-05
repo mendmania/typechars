@@ -119,7 +119,8 @@ startTimer()
         z-index: 100;
         animation: opa $duration steps(1, end) infinite reverse;
         border-left: none;
-        border-color: #c1ff72;
+        // border-color: #c1ff72;
+        
     }
 
     #{$item} .mask {

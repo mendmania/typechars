@@ -6,6 +6,25 @@ const modalStore = useModalStore()
 
 const { data, showModal, active } = storeToRefs(modalStore)
 
+onServerPrefetch(async () => {
+  useHead({
+    bodyAttrs: {
+      class: "bg-gray-300 dark:bg-gray-800",
+    },
+    script: [
+      {
+        innerHTML: `if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }`,
+        type: "text/javascript",
+      },
+    ],
+  });
+
+});
+
 useHead({
   title: "Type Chars - Master Typing Speed",
   htmlAttrs: { lang: "en" },

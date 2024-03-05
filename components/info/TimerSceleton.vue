@@ -1,4 +1,3 @@
-
 <script setup>
 import { ref } from 'vue'
 
@@ -11,15 +10,13 @@ const props = defineProps({
 
 })
 
-
-
-
 </script>
 
 <template>
     <div class="relative">
         <div class="spinner-wrapper">
-            <div class="background-strip flex justify-center items-center">
+            <div
+                class="background-strip flex justify-center items-center bg-gray-300 dark:bg-transparent">
                 <div class="flex flex-col items-center">
                     <span class="text-4xl font-bold">
                         {{ timer }}

@@ -6,7 +6,7 @@ import { ref } from "vue";
   <header class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-6">
       <div class="sm:flex sm:items-center sm:justify-between">
-        <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse bg-gray-400 dark:bg-transparent rounded-lg px-1 dark:rounded-none">
           <NuxtImg :src="'/Icon.png'" format="webp" height="50" alt="Type Chars Logo" />
           <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Type Chars</span> -->
         </NuxtLink>
@@ -16,6 +16,9 @@ import { ref } from "vue";
           </li> -->
           <li>
             <NuxtLink to="/" class="hover:underline">Home</NuxtLink>
+          </li>
+          <li>
+            <IndicatorDarkMode />
           </li>
         </ul>
       </div>
