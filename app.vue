@@ -6,25 +6,6 @@ const modalStore = useModalStore()
 
 const { data, showModal, active } = storeToRefs(modalStore)
 
-definePageMeta({
-  script: [
-    {
-      type: 'application/ld+json',
-      json: {
-        "@context": "http://schema.org",
-        "@type": "Course",
-        "name": "Advanced Typing Skills",
-        "description": "This course will help you improve your typing speed and accuracy, featuring a variety of interactive typing exercises.",
-        "provider": {
-          "@type": "Organization",
-          "name": "TypeChars",
-          "url": "https://typechars.com"
-        }
-      }
-    }
-  ]
-});
-
 onServerPrefetch(async () => {
   useHead({
     bodyAttrs: {
@@ -108,6 +89,35 @@ useHead({
       content: "https://typechars.com/Banner.webp",
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "TypeChars",
+        "url": "https://typechars.com",
+        "logo": "https://typechars.com/_vercel/image?url=%2FIcon.png&w=1536&q=100",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61556640643131",
+        ],
+        "description": "TypeChars offers interactive exercises to improve typing speed and accuracy, suitable for all skill levels.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mahir Domi",
+          "addressLocality": "Prishtine",
+          "postalCode": "10000",
+          "addressCountry": "XK"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "info@typechars.com",
+          "telephone": "+1-800-TYPE-FAST"
+        }
+      })
+    }
+  ]
 });
 </script>
 
