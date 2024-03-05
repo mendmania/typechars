@@ -1,7 +1,13 @@
 <script setup>
 
 useHead({
-    title: "Privacy Policy - TypeChars.com",
+    title: 'Privacy Policy - TypeChars',
+    meta: [
+        {
+            name: 'description',
+            content: 'Read TypeChars.com\'s Privacy Policy to learn how we respect and protect your data while you enhance your typing skills with us.'
+        }
+    ]
 })
 </script>
 
@@ -11,7 +17,8 @@ useHead({
         <p class="mt-4">Effective date: 24.02.2024</p>
 
         <h2 class="mt-6 mb-2 text-lg font-semibold">1. Introduction</h2>
-        <p>Our website, TypeChars.com (hereinafter: "the website"), is committed to protecting the privacy and security of
+        <p>Our website, TypeChars.com (hereinafter: "the website"), is committed to protecting the privacy and security
+            of
             our visitors' information. This Privacy Policy document contains types of information that is collected and
             recorded by the website and how we use it.</p>
 
@@ -19,10 +26,12 @@ useHead({
         <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
 
         <h2 class="mt-6 mb-2 text-lg font-semibold">3. Information we collect</h2>
-        <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be
+        <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will
+            be
             made clear to you at the point we ask you to provide your personal information.</p>
         <p>If you contact us directly, we may receive additional information about you such as your name, email address,
-            phone number, the contents of the message and/or attachments you may send us, and any other information you may
+            phone number, the contents of the message and/or attachments you may send us, and any other information you
+            may
             choose to provide.</p>
 
         <h2 class="mt-6 mb-2 text-lg font-semibold">4. How we use your information</h2>
@@ -33,7 +42,8 @@ useHead({
             <li>Understand and analyze how you use our website</li>
             <li>Develop new products, services, features, and functionality</li>
             <li>Communicate with you, either directly or through one of our partners, including for customer service, to
-                provide you with updates and other information relating to the website, and for marketing and promotional
+                provide you with updates and other information relating to the website, and for marketing and
+                promotional
                 purposes</li>
             <li>Send you emails</li>
             <li>Find and prevent fraud</li>
