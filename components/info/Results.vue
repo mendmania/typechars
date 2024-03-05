@@ -23,7 +23,7 @@ const props = defineProps({
         <div class="flex justify-between mb-3">
             <div class="flex items-center">
                 <div class="flex justify-center items-center">
-                    <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">Your progress</h5>
+                    <h1 class="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">Your progress</h1>
                 </div>
             </div>
         </div>

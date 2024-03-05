@@ -6,6 +6,25 @@ const modalStore = useModalStore()
 
 const { data, showModal, active } = storeToRefs(modalStore)
 
+definePageMeta({
+  script: [
+    {
+      type: 'application/ld+json',
+      json: {
+        "@context": "http://schema.org",
+        "@type": "Course",
+        "name": "Advanced Typing Skills",
+        "description": "This course will help you improve your typing speed and accuracy, featuring a variety of interactive typing exercises.",
+        "provider": {
+          "@type": "Organization",
+          "name": "TypeChars",
+          "url": "https://typechars.com"
+        }
+      }
+    }
+  ]
+});
+
 onServerPrefetch(async () => {
   useHead({
     bodyAttrs: {
@@ -26,20 +45,20 @@ onServerPrefetch(async () => {
 });
 
 useHead({
-  title: "Type Chars - Master Typing Speed",
+  title: "Improve Your Typing Speed and Accuracy with Online Typing Exercises | TypeChars.com",
   htmlAttrs: { lang: "en" },
   meta: [
     {
       hid: "description",
       name: "description",
       content:
-        "Type Chars is your ultimate platform to practice and enhance your typing speed and accuracy. Perfect for learners at all levels to become typing masters.",
+        "Master typing with TypeChars.com's engaging online tutor. Our typing exercises are designed to boost your speed and accuracy, perfect for all skill levels.",
     },
     {
       hid: "keywords",
       name: "keywords",
       content:
-        "typing, improve typing speed, typing practice, keyboard skills, typing master, touch typing, speed typing",
+        "typing, improve typing speed, typing practice, keyboard skills, typing masterty, ping speed test, accuracy in typing, keyboard practice exercises, online typing tutor, typing skills development, speed typing",
     },
     {
       hid: "og:type",
@@ -55,7 +74,7 @@ useHead({
       hid: "og:description",
       property: "og:description",
       content:
-        "Master your typing skills with Type Chars. Engage in various typing challenges to improve speed and accuracy. Start your journey to becoming a typing master today!",
+        "Master typing with TypeChars.com's engaging online tutor. Our typing exercises are designed to boost your speed and accuracy, perfect for all skill levels.",
     },
     {
       hid: "og:image",

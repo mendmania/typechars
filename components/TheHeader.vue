@@ -7,7 +7,7 @@ import { ref } from "vue";
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-6">
       <div class="sm:flex sm:items-center sm:justify-between">
         <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse bg-gray-400 dark:bg-transparent rounded-lg px-1 dark:rounded-none">
-          <NuxtImg :src="'/Icon.png'" format="webp" height="50" alt="Type Chars Logo" />
+          <NuxtImg :src="'/Icon.png'" format="webp" height="50" class="h-14" alt="Type Chars Logo" />
           <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Type Chars</span> -->
         </NuxtLink>
         <ul class="flex flex-wrap items-center my-3 text-sm font-medium text-gray-500 dark:text-gray-400">
