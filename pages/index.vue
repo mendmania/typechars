@@ -3,6 +3,7 @@
 
 <template>
   <div>
+    <!-- <AdHome /> -->
     <TypeInput />
   </div>
 </template>
