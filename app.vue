@@ -26,7 +26,7 @@ onServerPrefetch(async () => {
 });
 
 useHead({
-  title: "Improve Your Typing Speed and Accuracy with Online Typing Exercises | TypeChars.com",
+  title: "Improve Your Typing Speed and Accuracy | TypeChars.com",
   htmlAttrs: { lang: "en" },
   meta: [
     {
