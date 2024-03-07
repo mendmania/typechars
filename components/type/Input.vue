@@ -58,11 +58,9 @@ const getRandomItems = (arr, numItems) => {
   return Array.from(result);
 };
 
-const checkCurrentWord = (word) => {
-
-};
-
-fillNextWords(6);
+useAsyncData(() => {
+  fillNextWords(6);
+})
 
 const addFocusToInput = () => {
   typeInput.value.focus();
@@ -131,7 +129,7 @@ const timerFinished = () => {
     correctCharsPerSec: [],
     wrongCharsPerSec: [],
   }
-  
+
   isGameActive.value = false
 
   modalStore.showModal()
@@ -161,7 +159,8 @@ const analyticsFn = () => {
 </script>
 
 <template>
-  <div class="type-input flex flex-col justify-center items-center max-w-screen-lg mx-auto mb-32">
+  <div class="type-input flex flex-col justify-center items-start max-w-screen-lg mx-auto mb-32">
+    <h1 class="text-2xl text-gray-900 dark:text-white font-bold">Improve Your Typing Speed and Accuracy</h1>
     <div class="flex flex-col sm:flex-row items-center justify-evenly w-full">
       <InfoTimer v-if="isGameActive" :timerFinishedCallback="timerFinished" :analyticsCallback="analyticsFn"
         :timer="60" />
@@ -174,14 +173,16 @@ const analyticsFn = () => {
       <div class="text-red-400 w-1/2 flex overflow-hidden justify-end">
 
         <span v-for="(word, i) in pastWords" :key="`${word}-${i}`"
-          class="text-gray-400 mr-3.5 flex items-center whitespace-nowrap" :class="word.isCorrect ? '' : 'line-through'">
+          class="text-gray-400 mr-3.5 flex items-center whitespace-nowrap"
+          :class="word.isCorrect ? '' : 'line-through'">
           {{ word.value }}
         </span>
 
 
-        <span class="text-gray-400 flex items-center whitespace-nowrap" :class="isActiveWordCorrect ? 'text-[#c1ff72]' : 'text-red-700'">
-          {{ inputValue }}
-        </span>
+          <span class="text-gray-400 flex items-center whitespace-nowrap"
+            :class="isActiveWordCorrect ? 'text-[#c1ff72]' : 'text-red-700'">
+            {{ inputValue }}
+          </span>
       </div>
 
       <span class="custom-cursor border border-black animate-[pulse_.9s_linear_infinite] absolute right-[50%] h-1/2" />
@@ -189,8 +190,8 @@ const analyticsFn = () => {
       <div class=" w-1/2 flex"> <span class="mr-3.5 flex items-center whitespace-nowrap" v-for="(word, i) in nextWords"
           :key="`${word}-${i}`">
           {{
-            word.remainingWord
-          }}
+        word.remainingWord
+      }}
         </span>
       </div>
 
@@ -204,9 +205,7 @@ const analyticsFn = () => {
       <pre>
         {{ nextWords }}
       </pre>
-      <pre>
-        {{ pastWords }}
-      </pre>
+
     </span> -->
   </div>
 </template>

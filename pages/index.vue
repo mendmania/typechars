@@ -2,9 +2,10 @@
 </script>
 
 <template>
-  <div>
+  <div class="max-w-screen-lg mx-auto">
     <!-- <AdHome /> -->
     <TypeInput />
+    <TypeContent />
   </div>
 </template>
 
