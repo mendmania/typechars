@@ -13,45 +13,48 @@ useHead({
 
 <template>
     <div class="max-w-screen-lg container mx-auto px-4 dark:text-white">
-        <h1 class="text-2xl font-semibold">Privacy Policy for TypeChars.com</h1>
-        <p class="mt-4">Effective date: 24.02.2024</p>
+    <h1 class="text-3xl font-bold mb-4">Privacy Policy for TypeChars.com</h1>
+    <p class="mt-4">Effective Date: February 24, 2024</p>
 
-        <h2 class="mt-6 mb-2 text-lg font-semibold">1. Introduction</h2>
-        <p>Our website, TypeChars.com (hereinafter: "the website"), is committed to protecting the privacy and security
-            of
-            our visitors' information. This Privacy Policy document contains types of information that is collected and
-            recorded by the website and how we use it.</p>
+    <section>
+        <h2 class="mt-8 mb-4 text-xl font-bold">Introduction</h2>
+        <p>Welcome to TypeChars.com (hereinafter referred to as "the website"). We are steadfast in our dedication to safeguarding the privacy and security of our visitors and users. This Privacy Policy outlines the types of information we collect, how it's used, and the measures we take to protect your personal data.</p>
+    </section>
 
-        <h2 class="mt-6 mb-2 text-lg font-semibold">2. Consent</h2>
-        <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+    <section>
+        <h2 class="mt-8 mb-4 text-xl font-bold">Consent</h2>
+        <p>By accessing and using TypeChars.com, you accept and consent to the practices described in this Privacy Policy. If you disagree with any terms, please discontinue the use of our website immediately.</p>
+    </section>
 
-        <h2 class="mt-6 mb-2 text-lg font-semibold">3. Information we collect</h2>
-        <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will
-            be
-            made clear to you at the point we ask you to provide your personal information.</p>
-        <p>If you contact us directly, we may receive additional information about you such as your name, email address,
-            phone number, the contents of the message and/or attachments you may send us, and any other information you
-            may
-            choose to provide.</p>
-
-        <h2 class="mt-6 mb-2 text-lg font-semibold">4. How we use your information</h2>
-        <p>We use the information we collect in various ways, including to:</p>
+    <section>
+        <h2 class="mt-8 mb-4 text-xl font-bold">Information We Collect</h2>
+        <p>Our website is designed to inform you about the nature of personal information we may request and the context in which it is asked for. Here's a brief overview:</p>
         <ul class="list-disc ml-8">
-            <li>Provide, operate, and maintain our website</li>
-            <li>Improve, personalize, and expand our website</li>
-            <li>Understand and analyze how you use our website</li>
-            <li>Develop new products, services, features, and functionality</li>
-            <li>Communicate with you, either directly or through one of our partners, including for customer service, to
-                provide you with updates and other information relating to the website, and for marketing and
-                promotional
-                purposes</li>
-            <li>Send you emails</li>
-            <li>Find and prevent fraud</li>
+            <li><strong>Direct interactions:</strong> Information such as your name, email address, phone number, and any messages or attachments you send to us directly.</li>
+            <li><strong>Indirect collection:</strong> Data on how you access and interact with our website, including but not limited to, browser type, viewing times, and page views through the use of log files and tracking technologies.</li>
         </ul>
+    </section>
 
-        <h2 class="mt-6 mb-2 text-lg font-semibold">5. Log Files</h2>
-        <p>TypeChars.com follows a standard procedure of using log files.</p>
-    </div>
+    <section>
+        <h2 class="mt-8 mb-4 text-xl font-bold">Utilization of Your Information</h2>
+        <p>We leverage the collected information to enhance your experience and the quality of our service. The utilization includes:</p>
+        <ul class="list-disc ml-8">
+            <li>Operating, maintaining, and providing the features and functionality of TypeChars.com</li>
+            <li>Personalizing content and user experiences</li>
+            <li>Analyzing website usage to understand user behavior and trends</li>
+            <li>Developing new products, services, and features</li>
+            <li>Communicating for customer support, updates, marketing, and promotional purposes</li>
+            <li>Email communications for various purposes</li>
+            <li>Detecting and preventing fraudulent activities and ensuring security</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="mt-8 mb-4 text-xl font-bold">Log Files and Tracking</h2>
+        <p>TypeChars.com utilizes log files and tracking technologies in adherence with industry standards. These files log visitors when they visit websites, collecting information such as IP addresses, browser types, Internet Service Provider (ISP) details, date and time stamps, and referring/exit pages. This data is used to analyze trends, administer the site, track users' movement on the website, and gather demographic information.</p>
+    </section>
+</div>
+
 </template>
 
 <style></style>
