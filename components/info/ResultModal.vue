@@ -62,8 +62,7 @@ const shareOnFacebook = () => {
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">
                         <div class="bg-orange-500 h-2.5 rounded-full" :style="{ width: `${data.accuracy}%` }"></div>
                     </div>
-
-                    <InfoResults :correctCount="data.correctCount" :accuracy="data.accuracy" :count="data.count" />
+                    <InfoResults :correctCount="data.correctCount" :accuracy="data.accuracy" :count="data.count" :correctCharsCount="data.correctCharsCount" />
                     <InfoChart :wrongCharsPerSec="analytics.wrongCharsPerSec"
                         :correctCharsPerSec="analytics.correctCharsPerSec" />
 
