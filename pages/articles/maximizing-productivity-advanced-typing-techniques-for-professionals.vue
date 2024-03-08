@@ -69,7 +69,7 @@ useHead({
                 Techniques for Professionals</h1>
         </header>
         <div class="w-full flex justify-center">
-            <NuxtImg class="aspect-video object-contain"
+            <NuxtImg class="aspect-video object-contain rounded-lg"
                 src="https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/maximizing-productivity-advanced-typing-techniques-for-professionals.webp">
             </NuxtImg>
         </div>

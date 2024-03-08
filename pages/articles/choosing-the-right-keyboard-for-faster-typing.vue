@@ -69,7 +69,7 @@ useHead({
             </h1>
         </header>
         <div class="w-full flex justify-center">
-            <NuxtImg class="aspect-video object-contain"
+            <NuxtImg class="aspect-video object-contain rounded-lg"
                 src="https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/choosing-the-right-keyboard-for-faster-typing.webp">
             </NuxtImg>
         </div>

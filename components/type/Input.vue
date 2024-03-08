@@ -114,10 +114,12 @@ const calculateAccuracy = words => {
 
 const result = computed(() => {
   const correctWordsCount = pastWords.value.filter(word => word.isCorrect).length;
+  const correctCharsCount = pastWords.value.filter(word => word.isCorrect).join(',').length
   const accuracy = (correctWordsCount / pastWords.value.length) * 100 || 0;
   return {
     correctCount: correctWordsCount,
     accuracy: Math.round(accuracy),
+    correctCharsCount: correctCharsCount,
     count: pastWords.value.join(',').length,
   };
 })
@@ -165,7 +167,8 @@ const analyticsFn = () => {
       <InfoTimer v-if="isGameActive" :timerFinishedCallback="timerFinished" :analyticsCallback="analyticsFn"
         :timer="60" />
       <InfoTimerSceleton v-else :timerFinishedCallback="timerFinished" :timer="60" />
-      <InfoResults :correctCount="result.correctCount" :accuracy="result.accuracy" :count="result.count" />
+      <InfoResults :correctCount="result.correctCount" :accuracy="result.accuracy" :count="result.count"
+        :correctCharsCount="result.correctCharsCount" />
     </div>
     <div class="flex justify-start items-center bg-white w-full rounded-lg text-4xl overflow-hidden relative py-4"
       @click="addFocusToInput">
@@ -179,10 +182,10 @@ const analyticsFn = () => {
         </span>
 
 
-          <span class="text-gray-400 flex items-center whitespace-nowrap"
-            :class="isActiveWordCorrect ? 'text-[#c1ff72]' : 'text-red-700'">
-            {{ inputValue }}
-          </span>
+        <span class="text-gray-400 flex items-center whitespace-nowrap"
+          :class="isActiveWordCorrect ? 'text-[#c1ff72]' : 'text-red-700'">
+          {{ inputValue }}
+        </span>
       </div>
 
       <span class="custom-cursor border border-black animate-[pulse_.9s_linear_infinite] absolute right-[50%] h-1/2" />

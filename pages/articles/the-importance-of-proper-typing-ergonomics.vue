@@ -68,7 +68,7 @@ useHead({
             <h1 class="text-4xl font-bold text-gray-800 dark:text-white">The Importance of Proper Typing Ergonomics</h1>
         </header>
         <div class="w-full flex justify-center">
-            <NuxtImg class="aspect-video object-contain"
+            <NuxtImg class="aspect-video object-contain rounded-lg"
                 src="https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-importance-of-proper-typing-ergonomics.webp">
             </NuxtImg>
         </div>

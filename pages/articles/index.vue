@@ -1,8 +1,65 @@
 <script setup>
 
 useHead({
-    title: "TypeChars articles",
-})
+    title: "Explore Our Latest Articles - Insightful Reads for Every Interest",
+    meta: [
+        {
+            name: "description",
+            content: "Dive into our collection of articles spanning various topics. From technology to lifestyle, find reads that inspire, educate, and entertain.",
+        },
+        {
+            name: "keywords",
+            content: "latest articles, insightful reads, technology, lifestyle, professional development, entertainment",
+        },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Explore Our Latest Articles - Insightful Reads for Every Interest",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Dive into our collection of articles spanning various topics. From technology to lifestyle, find reads that inspire, educate, and entertain.",
+        },
+        // {
+        //     hid: "og:image",
+        //     property: "og:image",
+        //     content: "https://typechars.com//path/to/articles-page-image.webp",
+        // },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com//articles",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "Dive into our collection of articles spanning various topics. From technology to lifestyle, find reads that inspire, educate, and entertain.",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Explore Our Latest Articles - Insightful Reads for Every Interest",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Dive into our collection of articles spanning various topics. From technology to lifestyle, find reads that inspire, educate, and entertain.",
+        },
+        // {
+        //     hid: "twitter:image",
+        //     name: "twitter:image",
+        //     content: "https://typechars.com//path/to/articles-page-image.webp",
+        // },
+    ],
+});
 
 
 const articles = [
@@ -76,7 +133,7 @@ const articles = [
 <template>
     <div class="max-w-screen-lg container mx-auto px-4">
         <header class="text-center py-5">
-            <h1 class="text-4xl font-bold text-gray-800 dark:text-white">Type Chars articles</h1>
+            <h1 class="text-3xl font-bold text-gray-800 dark:text-white">Explore Our Latest Articles - Insightful Reads for Every Interest</h1>
         </header>
         <section class="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <CardArticle v-for="article in articles" :key="article.id" :data="article" />

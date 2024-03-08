@@ -13,6 +13,10 @@ const props = defineProps({
         type: Number,
         required: false,
     },
+    correctCharsCount: {
+        type: Number,
+        required: false,
+    },
 })
 
 </script>
@@ -37,7 +41,7 @@ const props = defineProps({
             <dl class=" rounded-lg flex flex-col items-center justify-center h-[100px] sm:h-[200px]">
                 <dt
                     class="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-gray-100 dark:bg-gray-500 text-gray-900 dark:text-white text-2xl font-medium flex items-center justify-center mb-1">
-                    {{ count }}</dt>
+                    {{ correctCharsCount }}</dt>
                 <dd class="text-gray-900 dark:text-white text-sm sm:text-lg font-medium">chars/min</dd>
             </dl>
             <dl class=" rounded-lg flex flex-col items-center justify-center h-[100px] sm:h-[200px]">

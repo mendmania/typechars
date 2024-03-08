@@ -69,7 +69,7 @@ useHead({
                 Think About Typing</h1>
         </header>
         <div class="w-full flex justify-center">
-            <NuxtImg class="aspect-video object-contain"
+            <NuxtImg class="aspect-video object-contain rounded-lg"
                 src="https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/unveiling-typechars-revolutionizing-the-way-we-think-about-typing.webp">
             </NuxtImg>
         </div>
