@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "The Future of Typing: Innovations and Trends in Keyboard Technology",
     meta: [
@@ -8,10 +9,57 @@ useHead({
         },
         {
             name: "keywords",
-            content: "keyboard technology, future of typing, virtual keyboards, AI typing assistants, typing innovations",
+            content: "advanced typing techniques, professional typing skills, increase typing speed, typing accuracy, workplace productivity",
+        },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "The Future of Typing: Innovations and Trends in Keyboard Technology",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Dive into the latest innovations and trends shaping the future of typing. From virtual keyboards to AI-driven typing assistants, explore how technology is revolutionizing our typing experience.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-future-of-typing-innovations-and-trends-in-keyboard-technology.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/the-future-of-typing-innovations-and-trends-in-keyboard-technology",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-future-of-typing-innovations-and-trends-in-keyboard-technology.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "The Future of Typing: Innovations and Trends in Keyboard Technology",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Dive into the latest innovations and trends shaping the future of typing. From virtual keyboards to AI-driven typing assistants, explore how technology is revolutionizing our typing experience.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-future-of-typing-innovations-and-trends-in-keyboard-technology.webp",
         },
     ],
-})
+});
 </script>
 
 <template>

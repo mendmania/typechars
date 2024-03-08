@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "Maximizing Productivity: Advanced Typing Techniques for Professionals",
     meta: [
@@ -10,8 +11,55 @@ useHead({
             name: "keywords",
             content: "advanced typing techniques, professional typing skills, increase typing speed, typing accuracy, workplace productivity",
         },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Maximizing Productivity: Advanced Typing Techniques for Professionals",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Elevate your professional performance with advanced typing techniques. Discover strategies to increase typing speed and accuracy, enhancing your productivity in the workplace.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/maximizing-productivity-advanced-typing-techniques-for-professionals.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/maximizing-productivity-advanced-typing-techniques-for-professionals",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/maximizing-productivity-advanced-typing-techniques-for-professionals.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Maximizing Productivity: Advanced Typing Techniques for Professionals",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Elevate your professional performance with advanced typing techniques. Discover strategies to increase typing speed and accuracy, enhancing your productivity in the workplace.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/maximizing-productivity-advanced-typing-techniques-for-professionals.webp",
+        },
     ],
-})
+});
 </script>
 
 <template>

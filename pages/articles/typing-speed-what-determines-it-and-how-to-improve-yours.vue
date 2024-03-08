@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "Typing Speed: What Determines It and How to Improve Yours",
     meta: [
@@ -10,8 +11,55 @@ useHead({
             name: "keywords",
             content: "improve typing speed, typing efficiency, faster typing, typing skills, keyboard proficiency",
         },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Typing Speed: What Determines It and How to Improve Yours",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Unlock the secrets to increasing your typing speed with this comprehensive guide. Learn about the factors that influence typing speed and discover effective strategies to improve your typing efficiency.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/typing-speed-what-determines-it-and-how-to-improve-yours.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/typing-speed-what-determines-it-and-how-to-improve-yours",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/typing-speed-what-determines-it-and-how-to-improve-yours.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Typing Speed: What Determines It and How to Improve Yours",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Unlock the secrets to increasing your typing speed with this comprehensive guide. Learn about the factors that influence typing speed and discover effective strategies to improve your typing efficiency.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/typing-speed-what-determines-it-and-how-to-improve-yours.webp",
+        },
     ],
-})
+});
 </script>
 
 <template>

@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "The Importance of Proper Typing Ergonomics",
     meta: [
@@ -8,10 +9,57 @@ useHead({
         },
         {
             name: "keywords",
-            content: "typing ergonomics, prevent typing strain, ergonomic typing practices, ergonomic workspace setup, healthy typing habits",
+            content: "advanced typing techniques, professional typing skills, increase typing speed, typing accuracy, workplace productivity",
+        },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "The Importance of Proper Typing Ergonomics",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Discover the critical role of ergonomics in typing to prevent strain, increase comfort, and enhance typing efficiency. Learn how to set up an ergonomic workspace and adopt best practices for healthier typing habits.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-importance-of-proper-typing-ergonomics.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/the-importance-of-proper-typing-ergonomics",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-importance-of-proper-typing-ergonomics.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "The Importance of Proper Typing Ergonomics",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Discover the critical role of ergonomics in typing to prevent strain, increase comfort, and enhance typing efficiency. Learn how to set up an ergonomic workspace and adopt best practices for healthier typing habits.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/the-importance-of-proper-typing-ergonomics.webp",
         },
     ],
-})
+});
 </script>
 
 <template>

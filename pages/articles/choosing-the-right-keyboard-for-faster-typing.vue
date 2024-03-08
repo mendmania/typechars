@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "Choosing the Right Keyboard for Faster Typing",
     meta: [
@@ -10,8 +11,55 @@ useHead({
             name: "keywords",
             content: "best keyboards for typing, mechanical keyboards, ergonomic keyboards, improve typing speed, keyboard guide",
         },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Choosing the Right Keyboard for Faster Typing",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Explore how selecting the right keyboard can dramatically improve your typing speed and accuracy. From mechanical to ergonomic designs, find out what suits your typing needs.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/choosing-the-right-keyboard-for-faster-typing.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/choosing-the-right-keyboard-for-faster-typing",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/choosing-the-right-keyboard-for-faster-typing.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Choosing the Right Keyboard for Faster Typing",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Explore how selecting the right keyboard can dramatically improve your typing speed and accuracy. From mechanical to ergonomic designs, find out what suits your typing needs.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/choosing-the-right-keyboard-for-faster-typing.webp",
+        },
     ],
-})
+});
 </script>
 
 <template>

@@ -88,6 +88,11 @@ useHead({
       name: "twitter:image",
       content: "https://typechars.com/Banner.webp",
     },
+    {
+      hid: "og:image:alt",
+      name: "og:image:alt",
+      content: "https://typechars.com/Banner.webp",
+    },
   ],
   script: [
     {
