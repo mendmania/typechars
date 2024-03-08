@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "Unveiling TypeChars: Revolutionizing the Way We Think About Typing",
     meta: [
@@ -10,8 +11,55 @@ useHead({
             name: "keywords",
             content: "TypeChars, improve typing skills, typing software, typing improvement tools, learn to type faster",
         },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Unveiling TypeChars: Revolutionizing the Way We Think About Typing",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Discover how TypeChars is transforming typing with its innovative platform, designed to improve typing skills, productivity, and ergonomics for users of all levels.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/unveiling-typechars-revolutionizing-the-way-we-think-about-typing.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/unveiling-typechars-revolutionizing-the-way-we-think-about-typing",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/unveiling-typechars-revolutionizing-the-way-we-think-about-typing.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Unveiling TypeChars: Revolutionizing the Way We Think About Typing",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Discover how TypeChars is transforming typing with its innovative platform, designed to improve typing skills, productivity, and ergonomics for users of all levels.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/unveiling-typechars-revolutionizing-the-way-we-think-about-typing.webp",
+        },
     ],
-})
+});
 </script>
 
 <template>
