@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "Improving Typing Speed and Accuracy: Tips and Techniques",
     meta: [
@@ -10,8 +11,55 @@ useHead({
             name: "keywords",
             content: "improve typing speed, typing accuracy, typing techniques, typing tips, efficient typing, keyboard skills",
         },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Improving Typing Speed and Accuracy: Tips and Techniques",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Explore proven tips and techniques to enhance your typing speed and accuracy, making you more efficient in the digital age. Perfect for students, professionals, and anyone looking to improve their typing skills.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/improving-typing-speed-and-accuracy-tips-and-techniques.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/improving-typing-speed-and-accuracy-tips-and-techniques",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/improving-typing-speed-and-accuracy-tips-and-techniques.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Improving Typing Speed and Accuracy: Tips and Techniques",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Explore proven tips and techniques to enhance your typing speed and accuracy, making you more efficient in the digital age. Perfect for students, professionals, and anyone looking to improve their typing skills.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/improving-typing-speed-and-accuracy-tips-and-techniques.webp",
+        },
     ],
-})
+});
 </script>
 
 <template>

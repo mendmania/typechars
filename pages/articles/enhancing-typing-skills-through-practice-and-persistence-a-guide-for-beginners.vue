@@ -1,4 +1,5 @@
 <script setup>
+
 useHead({
     title: "Enhancing Typing Skills Through Practice and Persistence: A Guide for Beginners",
     meta: [
@@ -10,8 +11,55 @@ useHead({
             name: "keywords",
             content: "typing skills for beginners, improve typing speed, typing practice, learn typing, typing for beginners",
         },
+        {
+            hid: "og:type",
+            property: "og:type",
+            content: "website",
+        },
+        {
+            hid: "og:title",
+            property: "og:title",
+            content: "Enhancing Typing Skills Through Practice and Persistence: A Guide for Beginners",
+        },
+        {
+            hid: "og:description",
+            property: "og:description",
+            content:
+                "Kickstart your journey to becoming a typing master with our beginner's guide. Learn the essentials of practicing effectively and persistently to enhance your typing skills.",
+        },
+        {
+            hid: "og:image",
+            property: "og:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/enhancing-typing-skills-through-practice-and-persistence-a-guide-for-beginners.webp",
+        },
+        {
+            hid: "og:url",
+            property: "og:url",
+            content: "https://typechars.com/articles/enhancing-typing-skills-through-practice-and-persistence-a-guide-for-beginners",
+        },
+        {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/enhancing-typing-skills-through-practice-and-persistence-a-guide-for-beginners.webp",
+        },
+        {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: "Enhancing Typing Skills Through Practice and Persistence: A Guide for Beginners",
+        },
+        {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content:
+                "Kickstart your journey to becoming a typing master with our beginner's guide. Learn the essentials of practicing effectively and persistently to enhance your typing skills.",
+        },
+        {
+            hid: "twitter:image",
+            name: "twitter:image",
+            content: "https://u01uxt2pwyoavzuv.public.blob.vercel-storage.com/articles/enhancing-typing-skills-through-practice-and-persistence-a-guide-for-beginners.webp",
+        },
     ],
-})
+});
 </script>
 
 <template>
