@@ -4,7 +4,7 @@ export const TYPE_CHAR_WORDS = [
     "umbrella", "violin", "water", "xylophone", "yacht", "zebra", "accordion", "bubble", "candle",
     "dragon", "elevator", "flute", "giraffe", "helicopter", "igloo", "jacket", "kangaroo", "lighthouse",
     "mountain", "noodle", "octopus", "penguin", "quilt", "rocket", "sunflower", "train", "unicorn",
-    "volcano", "windmill", "x-ray", "yogurt", "zipper", "astronaut", "bridge", "castle", "dolphin",
+    "volcano", "windmill", "yogurt", "zipper", "astronaut", "bridge", "castle", "dolphin",
     "envelope", "forest", "guitar", "hurricane", "island", "jungle", "koala", "lantern", "mirror",
     "nebula", "oasis", "puzzle", "quokka", "rainbow", "squirrel", "telescope", "universe", "vampire",
     "waterfall", "xylophonist", "yellow", "zeppelin", "archer", "butterfly", "crystal", "daisy",
