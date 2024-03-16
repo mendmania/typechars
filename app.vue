@@ -1,10 +1,4 @@
 <script setup>
-import { useModalStore } from './stores/modal'
-import { storeToRefs } from 'pinia';
-
-const modalStore = useModalStore()
-
-const { data, showModal, active } = storeToRefs(modalStore)
 
 onServerPrefetch(async () => {
   useHead({
@@ -129,12 +123,11 @@ useHead({
 
 <template>
   <div class="h-full flex flex-col">
-    <div class="h-full flex flex-col" :class="active ? 'blur-lg' : null">
+    <div class="h-full flex flex-col">
       <TheHeader />
       <NuxtPage />
       <div class="flex-grow" />
       <TheFooter />
     </div>
-    <InfoResultModal v-if="active" />
   </div>
 </template>

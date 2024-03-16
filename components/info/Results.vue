@@ -1,5 +1,12 @@
 <script setup>
 
+import { useModalStore } from '../../stores/modal'
+import { storeToRefs } from 'pinia';
+
+const modalStore = useModalStore()
+
+const { data, active } = storeToRefs(modalStore)
+
 const props = defineProps({
     correctCount: {
         type: Number,
@@ -30,7 +37,6 @@ const props = defineProps({
                 </div>
             </div>
         </div>
-
         <div class="grid grid-cols-3 gap-3 mb-2">
             <dl class=" rounded-lg flex flex-col items-center justify-center h-[100px] sm:h-[200px]">
                 <dt

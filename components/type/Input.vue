@@ -125,7 +125,7 @@ const result = computed(() => {
 })
 
 const timerFinished = () => {
-
+  const router = useRouter()
   modalStore.setAnalytics(analytics.value)
   analytics.value = {
     correctCharsPerSec: [],
@@ -134,11 +134,25 @@ const timerFinished = () => {
 
   isGameActive.value = false
 
-  modalStore.showModal()
   modalStore.setModalData(result.value)
+
+  const correctCount = result.value.correctCount
+  const accuracy = result.value.accuracy
+  const correctCharsCount = result.value.correctCharsCount
+  const count = result.value.count
 
   inputValue.value = null
   pastWords.value = []
+
+  router.push({
+    name: 'results',
+    query: {
+      correctCount,
+      accuracy,
+      correctCharsCount,
+      count,
+    },
+  });
 }
 
 const analyticsFn = () => {
